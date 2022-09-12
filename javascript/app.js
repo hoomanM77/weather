@@ -58,7 +58,7 @@ const countryGenerator=(countries)=>{
 const setRegionData=async (e)=>{
     try{
         let {target:input}=e
-        let res=await fetch(`http://battuta.medunes.net/api/region/${input.value}/all/?key=e39ede1b24b5fcfca0cd004a1c2bef6a`)
+        let res=await fetch(`https://battuta.medunes.net/api/region/${input.value}/all/?key=e39ede1b24b5fcfca0cd004a1c2bef6a`)
         if(res.ok){
             let regions=await res.json()
             regionGenerator(regions)
