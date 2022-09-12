@@ -34,7 +34,7 @@ function _qAll(tag) {
 ////////////////////////////////////////////////////////////////////
 const setCountryData= async (e)=>{
     try{
-        let res=await fetch('http://battuta.medunes.net/api/country/all/?key=e39ede1b24b5fcfca0cd004a1c2bef6a')
+        let res=await fetch('https://battuta.medunes.net/api/country/all/?key=e39ede1b24b5fcfca0cd004a1c2bef6a')
         if(res.ok){
             let countries=await res.json()
             allCountries=[...countries]
