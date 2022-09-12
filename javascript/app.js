@@ -114,7 +114,7 @@ class Weather {
     }
     async sendRequest(city,country){
         try{
-            let res= await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=86b0bd9b76517148d71f0967cc7de574`)
+            let res= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=86b0bd9b76517148d71f0967cc7de574`)
             if(res.ok){
                 let weatherData=await res.json()
                 let weather=new Weather()
